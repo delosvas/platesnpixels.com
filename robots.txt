@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://platesnpixels.com/sitemap.xml
