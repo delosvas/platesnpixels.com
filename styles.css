@@ -14,6 +14,7 @@
 html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -222,32 +223,11 @@ body {
     max-width: 900px;
     position: relative;
 }
-.about-section h2, .why-section h2 {
+.about-section h2 {
     color: var(--primary-dark);
     font-size: 2.2em;
     margin-bottom: 18px;
     text-align: center;
-}
-.why-section ul {
-    margin: 0 auto;
-    max-width: 700px;
-    padding-left: 0;
-    list-style: none;
-}
-.why-section ul li {
-    margin-bottom: 18px;
-    font-size: 1.13em;
-    padding-left: 0;
-    position: relative;
-    padding-left: 18px;
-}
-.why-section ul li:before {
-    content: '•';
-    color: var(--primary-dark);
-    position: absolute;
-    left: 0;
-    font-size: 1.2em;
-    top: 0;
 }
 
 /* ========== OVERVIEW SECTION ========== */
@@ -295,8 +275,9 @@ body {
 /* ========== FEATURES GRID ========== */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
 }
 .features-grid > div {
     background: rgba(255,255,255,0.85);
@@ -313,10 +294,8 @@ body {
 /* ========== INTEGRATIONS GRID ========== */
 .integrations-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 18px;
-    margin-top: 24px;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
 }
 .integrations-grid > div {
     background: rgba(255,255,255,0.85);
@@ -464,23 +443,23 @@ body {
 @media (max-width: 900px) {
     .main-header .container {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         min-height: 100px;
         gap: 12px;
     }
     .header-nav {
-        justify-content: flex-start;
+        justify-content: center;
         gap: 18px;
     }
     .header-utils {
-        justify-content: flex-end;
+        justify-content: center;
         gap: 10px;
     }
 }
 @media (max-width: 600px) {
     .main-header .container {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         min-height: 120px;
         gap: 8px;
         padding: 8px 0;
@@ -496,4 +475,137 @@ body {
     .header-utils {
         gap: 6px;
     }
+    .hero-section {
+        padding: 40px 0 30px 0;
+    }
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    .hero-section .subtitle {
+        font-size: 1.1em;
+    }
+    .signup-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .signup-form input[type="email"] {
+        min-width: 200px;
+    }
+    .features-grid, .integrations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Feature Cards */
+.feature-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Explore More Button */
+.explore-more-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.explore-more-btn {
+    background: transparent;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.explore-more-btn:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.btn-icon {
+    transition: transform 0.3s ease;
+}
+
+.explore-more-btn:hover .btn-icon {
+    transform: translateY(3px);
+}
+
+/* Smooth expand/collapse for hidden features */
+.hidden-features {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s cubic-bezier(0.4,0,0.2,1), opacity 0.5s ease;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 0;
+}
+.hidden-features.visible {
+    max-height: 2000px;
+    opacity: 1;
+    margin-bottom: 24px;
+}
+
+/* Integration Cards */
+.integrations-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.integration-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.integration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.integration-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.integration-card h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.integration-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
 } 

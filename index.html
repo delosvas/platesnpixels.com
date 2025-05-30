@@ -26,7 +26,6 @@
             <nav class="header-nav">
                 <a href="#about">About</a>
                 <a href="#features">Features</a>
-                <a href="#why">Why Us</a>
                 <a href="#integrations">Integrations</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact">Contact</a>
@@ -75,95 +74,98 @@
     <section id="features" class="features-section">
         <div class="container">
             <h2>Key Features</h2>
-            <div class="features-grid">
-                <div>
+            <div class="features-grid" id="main-features">
+                <div class="feature-card">
                     <h4>Live Inventory Tracking</h4>
                     <p>Real-time, ingredient-level updates via invoice scanning and order flow.</p>
                 </div>
-                <div>
+                <div class="feature-card">
+                    <h4>Smart Fraud Detection</h4>
+                    <p>Prevent stock manipulation with smart scales and camera integration.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>Multi-Unit Dashboard</h4>
+                    <p>View live sales, best-sellers, and inventory performance across all venues.</p>
+                </div>
+            </div>
+            <div class="features-grid hidden-features" id="additional-features">
+                <div class="feature-card">
                     <h4>Real-Time Dish Profitability</h4>
                     <p>See true margins with ingredient-level tracking linked to sales.</p>
                 </div>
-                <div>
+                <div class="feature-card">
                     <h4>Waste & Treat Logging</h4>
                     <p>Track free items (treats/staff meals) so they're excluded from sales data but deducted from inventory.</p>
                 </div>
-                <div>
+                <div class="feature-card">
                     <h4>Smart Reordering Suggestions</h4>
                     <p>Predictive ordering based on stock movement, past trends, and real-time usage.</p>
                 </div>
-                <div>
-                    <h4>Custom Recipe Builder & Portion Control</h4>
+                <div class="feature-card">
+                    <h4>Custom Recipe Builder</h4>
                     <p>Maintain consistency, control food cost, and reduce waste with precise dish configurations.</p>
                 </div>
-                <div>
-                    <h4>Multi-Location Sync & Sales Insights</h4>
-                    <p>View live sales, best-sellers, and inventory performance across all venues — one dashboard.</p>
-                </div>
-                <div>
-                    <h4>Advanced Live Inventory & Central Warehouse Tracking</h4>
+                <div class="feature-card">
+                    <h4>Advanced Live Inventory</h4>
                     <p>Real-time stock monitoring across multiple kitchens, bars, and storage points.</p>
                 </div>
-                <div>
-                    <h4>Smart Fraud Detection (Camera + Scale Integration)</h4>
-                    <p>Prevent stock manipulation by comparing product weight (smart scales) to declared usage — cameras trigger alerts on suspicious activity.</p>
-                </div>
-                <div>
-                    <h4>Automated Restocking Across Departments</h4>
+                <div class="feature-card">
+                    <h4>Automated Restocking</h4>
                     <p>AI-driven reorder suggestions that sync with central purchasing based on usage, sales, and waste.</p>
                 </div>
-                <div>
-                    <h4>Role-Based Access & Staff Accountability</h4>
+                <div class="feature-card">
+                    <h4>Role-Based Access</h4>
                     <p>Each staff member has individual logins; track order history, idle times, and stock interaction per person.</p>
                 </div>
-                <div>
-                    <h4>Cross-Property Analytics & Forecasting</h4>
+                <div class="feature-card">
+                    <h4>Cross-Property Analytics</h4>
                     <p>See live profitability, sales trends, top dishes, and inventory flow per department or outlet.</p>
                 </div>
-                <div>
-                    <h4>Multi-Unit Dashboard & Sales Sync</h4>
-                    <p>Central dashboard across all locations, live updates from every PDA or order terminal.</p>
-                </div>
-                <div>
-                    <h4>Automatic Fraud & Waste Detection</h4>
-                    <p>Combine smart scale data + camera triggers with real-time inventory and order logs to detect missing items, false portioning, and unlogged treats.</p>
-                </div>
-                <div>
-                    <h4>Predictive Reordering Suggestions</h4>
+                <div class="feature-card">
+                    <h4>Predictive Reordering</h4>
                     <p>Dynamic reorder alerts using sales velocity, waste, and seasonality.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="why" class="why-section">
-        <div class="container">
-            <h2>Why Plates & Pixels Wins</h2>
-            <ul>
-                <li><strong>True Live Inventory Deduction:</strong> Real-time, ingredient-level deduction using actual dish recipes, order data, and scanned invoices. Instant visibility into stock and purchasing needs.</li>
-                <li><strong>Automatic Fraud & Waste Detection:</strong> Smart scale and camera integration cuts silent profit leaks and human error without micromanagement.</li>
-                <li><strong>Multi-Unit Dashboard & Sales Sync:</strong> Central dashboard for all locations, enabling group-level decisions in real time.</li>
-                <li><strong>Predictive Reordering:</strong> Dynamic reorder alerts based on sales velocity, waste, and seasonality — not just static thresholds.</li>
-            </ul>
+            <div class="explore-more-container">
+                <button id="explore-more-btn" class="explore-more-btn">
+                    <span class="btn-text">Explore More Features</span>
+                    <span class="btn-icon">↓</span>
+                </button>
+            </div>
         </div>
     </section>
     <section id="integrations" class="integrations-section">
         <div class="container">
             <h2>Integrations & Technology</h2>
-            <p>Plates & Pixels connects with your favorite tools and hardware:</p>
+            <p class="integrations-intro">Seamlessly connect with your favorite tools and hardware:</p>
             <div class="integrations-grid">
-                <div>Smart Scales</div>
-                <div>Smart Cameras</div>
-                <div>POS Providers</div>
-                <div>CRM & Support Tools</div>
-                <div>Cloud Services</div>
-                <div>Legal & Accounting Tools</div>
+                <div class="integration-card">
+                    <div class="integration-icon">⚖️</div>
+                    <h4>Smart Scales</h4>
+                    <p>Precision weighing with real-time data sync</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">📹</div>
+                    <h4>Smart Cameras</h4>
+                    <p>AI-powered monitoring and analytics</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">💳</div>
+                    <h4>POS Providers</h4>
+                    <p>Seamless point-of-sale integration</p>
+                </div>
+                <div class="integration-card">
+                    <div class="integration-icon">☁️</div>
+                    <h4>Cloud Services</h4>
+                    <p>Secure, scalable cloud infrastructure</p>
+                </div>
             </div>
         </div>
     </section>
     
     <section id="pricing" class="pricing-section">
         <div class="container">
-            <h2>Pricing</h2>
+            <h2>Packages</h2>
             <div class="pricing-grid">
                 <div class="plan">
                     <h3>Starter Plan</h3>
@@ -246,6 +248,23 @@
             }
         } catch (err) {
             alert('There was a problem. Please try again.');
+        }
+    });
+
+    // Explore More Features functionality
+    document.getElementById('explore-more-btn').addEventListener('click', function() {
+        const additionalFeatures = document.getElementById('additional-features');
+        const btnText = this.querySelector('.btn-text');
+        const btnIcon = this.querySelector('.btn-icon');
+        
+        if (additionalFeatures.classList.contains('visible')) {
+            additionalFeatures.classList.remove('visible');
+            btnText.textContent = 'Explore More Features';
+            btnIcon.textContent = '↓';
+        } else {
+            additionalFeatures.classList.add('visible');
+            btnText.textContent = 'Show Less';
+            btnIcon.textContent = '↑';
         }
     });
     </script>
