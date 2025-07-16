@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plates & Pixels - Request a Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/pnplogo-circle.png">
+    <meta name="description" content="Request a demo or start your free trial of Plates & Pixels - the innovative hospitality SaaS platform.">
+    <meta name="keywords" content="Plates & Pixels, demo request, free trial, hospitality SaaS, restaurant software">
+    <meta name="author" content="Plates & Pixels">
+    <meta name="robots" content="index, follow">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="design-root">
+        <div class="layout-container">
+            <header class="Top header">
+                <a href="mainpage.html" class="header-logo">
+                    <div class="logo-icon">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="logo-text">Plates &amp; Pixels</h2>
+                </a>
+                <nav class="nav-menu">
+                    <a class="nav-link" href="mainpage.html#features">Product</a>
+                    <a class="nav-link" href="mainpage.html#solutions">Solutions</a>
+                    <a class="nav-link" href="mainpage.html#resources">Resources</a>
+                    <a class="nav-link" href="mainpage.html#pricing">Pricing</a>
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </nav>
+                <div class="header-buttons">
+                    <button onclick="openDemoModal()" class="demo-button">
+                        <span class="demo-button-text">Request a Demo</span>
+                    </button>
+                    <a href="register.html" class="login-button">
+                        <span class="login-button-text">Get Started</span>
+                    </a>
+                </div>
+                <button class="menu-toggle">
+                    <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="3" x2="21" y1="12" y2="12"></line>
+                        <line x1="3" x2="21" y1="6" y2="6"></line>
+                        <line x1="3" x2="21" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+            </header>
+            <main class="main-content">
+                <section class="register-section">
+                    <div class="register-container">
+                        <div class="register-header">
+                            <h1 class="register-title">Experience Plates &amp; Pixels</h1>
+                            <p class="register-subtitle">
+                                Discover how our platform can streamline your hospitality operations. Fill out the form below to
+                                request a personalized demo or start your free trial.
+                            </p>
+                        </div>
+                        <div class="register-form-container">
+                            <form id="register-form" class="register-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="first-name" class="form-label">First Name</label>
+                                        <input type="text" id="first-name" name="first-name" placeholder="e.g. Jane" required class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name" class="form-label">Last Name</label>
+                                        <input type="text" id="last-name" name="last-name" placeholder="e.g. Doe" required class="form-input">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="e.g. jane.doe@example.com" required class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company" class="form-label">Company</label>
+                                    <input type="text" id="company" name="company" placeholder="e.g. The Grand Hotel" required class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company-size" class="form-label">Company Size</label>
+                                    <select id="company-size" name="company-size" required class="form-select">
+                                        <option value="" disabled selected>Select company size</option>
+                                        <option value="1-10">1-10 employees</option>
+                                        <option value="11-50">11-50 employees</option>
+                                        <option value="51-200">51-200 employees</option>
+                                        <option value="201-500">201-500 employees</option>
+                                        <option value="500+">500+ employees</option>
+                                    </select>
+                                </div>
+                                <div class="form-expectations">
+                                    <h3 class="expectations-title">What to expect:</h3>
+                                    <ul class="expectations-list">
+                                        <li>A personalized walkthrough of Plates &amp; Pixels features.</li>
+                                        <li>Discussion on how our platform can meet your specific needs.</li>
+                                        <li>Answers to all your questions from our product experts.</li>
+                                        <li>(For trials) Full access to explore the platform at your own pace.</li>
+                                    </ul>
+                                </div>
+                                <button type="submit" class="register-button">
+                                    Request Demo / Start Trial
+                                </button>
+                            </form>
+                            <p class="register-disclaimer">
+                                By submitting this form, you agree to our
+                                <a href="#" class="disclaimer-link">Terms of Service</a> and
+                                <a href="#" class="disclaimer-link">Privacy Policy</a>.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <div class="logo-icon">
+                                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="footer-logo-text">Plates &amp; Pixels</h2>
+                            </div>
+                            <p class="footer-description">Streamlining hospitality, one pixel at a time.</p>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-links-column">
+                                <h3 class="footer-links-title">Company</h3>
+                                <ul class="footer-links-list">
+                                    <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+                                    <li><a href="#" class="footer-link">Careers</a></li>
+                                    <li><a href="#" class="footer-link">Press</a></li>
+                                    <li><a href="#" class="footer-link">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-links-column">
+                                <h3 class="footer-links-title">Legal</h3>
+                                <ul class="footer-links-list">
+                                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p class="footer-copyright">© 2024 Plates &amp; Pixels. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Demo Request Modal -->
+    <div id="demoModal" class="demo-modal">
+        <div class="demo-modal-content">
+            <div class="demo-modal-header">
+                <h3 class="demo-modal-title">Request a Demo</h3>
+                <button onclick="closeDemoModal()" class="demo-modal-close">
+                    <svg class="close-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <form id="demo-form" class="demo-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" id="company" name="company" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message (Optional)</label>
+                    <textarea id="message" name="message" rows="3" class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="demo-form-button">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

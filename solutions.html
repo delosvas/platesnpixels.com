@@ -1,0 +1,257 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B600%3B700%3B800"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #e92933;
+            --secondary-color: #fcf8f8;
+            --text-primary: #1b0e0e;
+            --text-secondary: #573d3e;
+            --accent-color: #f3e7e8;
+          }
+          body {
+            font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+          }
+          .icon-container svg {
+            width: 32px;
+            height: 32px;
+            color: var(--primary-color);
+          }
+        </style>
+</head>
+
+<body>
+    <div
+        class="relative flex size-full min-h-screen flex-col bg-[var(--secondary-color)] group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--accent-color)] px-6 sm:px-10 py-4">
+                <div class="flex items-center gap-3 text-[var(--text-primary)]">
+                    <div class="size-6 text-[var(--primary-color)]">
+                        <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-[-0.015em]">
+                        CulinaryEdge</h2>
+                </div>
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a class="text-[var(--text-primary)] text-sm font-medium leading-normal hover:text-[var(--primary-color)] transition-colors"
+                        href="#">Product</a>
+                    <a class="text-[var(--text-primary)] text-sm font-medium leading-normal hover:text-[var(--primary-color)] transition-colors"
+                        href="#">Solutions</a>
+                    <a class="text-[var(--text-primary)] text-sm font-medium leading-normal hover:text-[var(--primary-color)] transition-colors"
+                        href="#">Pricing</a>
+                    <a class="text-[var(--text-primary)] text-sm font-medium leading-normal hover:text-[var(--primary-color)] transition-colors"
+                        href="#">Resources</a>
+                </nav>
+                <div class="flex items-center gap-2">
+                    <button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[var(--primary-color)] text-[var(--secondary-color)] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+                        <span class="truncate">Get Started</span>
+                    </button>
+                    <button
+                        class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[var(--accent-color)] text-[var(--text-primary)] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-80 transition-colors">
+                        <span class="truncate">Login</span>
+                    </button>
+                    <button class="lg:hidden p-2 rounded-md hover:bg-[var(--accent-color)] transition-colors">
+                        <svg class="text-[var(--text-primary)]" fill="none" height="24" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            width="24" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="3" x2="21" y1="12" y2="12"></line>
+                            <line x1="3" x2="21" y1="6" y2="6"></line>
+                            <line x1="3" x2="21" y1="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            <main class="flex flex-1 flex-col">
+                <section class="relative @container">
+                    <div class="min-h-[calc(100vh-80px)] sm:min-h-[480px] md:min-h-[560px] lg:min-h-[640px] flex flex-col items-center justify-center p-6 text-center bg-cover bg-center bg-no-repeat"
+                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDIBXOWOg7v7Ve2ZG-97-8XYeCkR-HpEMVqhiq8DdwP67P-5j4hl8TZ5kuq7LUy5kIcArjYCe6dxdZe1aRS9lAX6UqoZzJSHIyMHLeVD4VsjRBEI7ArI35c0kXNIjVrTduNj3zODt44gegtxJ9gtoE5biK7ZNLaDc_t2AWAraqYgFdP0LrPrkJkC9QNLPAUmTdANbyP_ysxrSEBs_adQsCfoBpa3ofp_sr__vnp4CKOtYOOZHBUgeA6HsLJiILk8sfobJY9V6k0Zmg");'>
+                        <div class="max-w-3xl mx-auto">
+                            <h1
+                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl lg:text-6xl">
+                                Revolutionize Your Restaurant Management
+                            </h1>
+                            <p
+                                class="text-white text-base sm:text-lg font-normal leading-relaxed mt-4 mb-8 max-w-2xl mx-auto">
+                                CulinaryEdge is the all-in-one platform designed to streamline your operations, boost
+                                efficiency, and maximize profitability. From inventory to menu
+                                management, we've got you covered.
+                            </p>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[var(--primary-color)] text-[var(--secondary-color)] text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors mx-auto">
+                                <span class="truncate">Request a Demo</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="px-6 sm:px-10 lg:px-20 xl:px-40 py-16 sm:py-20 @container">
+                    <div class="max-w-5xl mx-auto">
+                        <div class="text-center mb-12 sm:mb-16">
+                            <h2
+                                class="text-[var(--text-primary)] text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+                                Key Features
+                            </h2>
+                            <p
+                                class="text-[var(--text-secondary)] text-base sm:text-lg font-normal leading-relaxed mt-3 max-w-2xl mx-auto">
+                                Explore the powerful tools that CulinaryEdge offers to transform your restaurant's
+                                performance.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-[var(--accent-color)] bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                                <div class="icon-container">
+                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M240,184h-8V57.9l9.67-2.08a8,8,0,1,0-3.35-15.64l-224,48A8,8,0,0,0,16,104a8.16,8.16,0,0,0,1.69-.18L24,102.47V184H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM40,99,216,61.33V184H192V128a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8v56H40Zm136,53H80V136h96ZM80,168h96v16H80Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Live
+                                        Inventory Tracking</h3>
+                                    <p class="text-[var(--text-secondary)] text-sm font-normal leading-relaxed">
+                                        Monitor stock levels in real-time, ensuring you always have what you need and
+                                        minimizing overstocking.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-[var(--accent-color)] bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                                <div class="icon-container">
+                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Smart
+                                        Fraud Detection</h3>
+                                    <p class="text-[var(--text-secondary)] text-sm font-normal leading-relaxed">Identify
+                                        and prevent fraudulent activities with advanced analytics and alerts.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-[var(--accent-color)] bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                                <div class="icon-container">
+                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V96H40V56ZM40,112H96v88H40Zm176,88H112V112H216v88Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">
+                                        Multi-Unit Dashboard</h3>
+                                    <p class="text-[var(--text-secondary)] text-sm font-normal leading-relaxed">Manage
+                                        multiple locations from a single, intuitive dashboard for a comprehensive
+                                        overview.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-[var(--accent-color)] bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                                <div class="icon-container">
+                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm40-68a28,28,0,0,1-28,28h-4v8a8,8,0,0,1-16,0v-8H104a8,8,0,0,1,0-16h36a12,12,0,0,0,0-24H116a28,28,0,0,1,0-56h4V72a8,8,0,0,1,16,0v8h16a8,8,0,0,1,0,16H116a12,12,0,0,0,0,24h24A28,28,0,0,1,168,148Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Real-Time
+                                        Dish Profitability</h3>
+                                    <p class="text-[var(--text-secondary)] text-sm font-normal leading-relaxed">
+                                        Calculate the profitability of each dish in real-time, allowing for informed
+                                        pricing and menu adjustments.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-[var(--accent-color)] bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                                <div class="icon-container">
+                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Waste
+                                        &amp; Treat Logging</h3>
+                                    <p class="text-[var(--text-secondary)] text-sm font-normal leading-relaxed">Track
+                                        and analyze waste and treats to identify areas for improvement and cost savings.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-[var(--accent-color)] bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                                <div class="icon-container">
+                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M197.67,186.37a8,8,0,0,1,0,11.29C196.58,198.73,170.82,224,128,224c-37.39,0-64.53-22.4-80-39.85V208a8,8,0,0,1-16,0V160a8,8,0,0,1,8-8H88a8,8,0,0,1,0,16H55.44C67.76,183.35,93,208,128,208c36,0,58.14-21.46,58.36-21.68A8,8,0,0,1,197.67,186.37ZM216,40a8,8,0,0,0-8,8V71.85C192.53,54.4,165.39,32,128,32,85.18,32,59.42,57.27,58.34,58.34a8,8,0,0,0,11.3,11.34C69.86,69.46,92,48,128,48c35,0,60.24,24.65,72.56,40H168a8,8,0,0,0,0,16h48a8,8,0,0,0,8-8V48A8,8,0,0,0,216,40Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Smart
+                                        Reordering Suggestions</h3>
+                                    <p class="text-[var(--text-secondary)] text-sm font-normal leading-relaxed">
+                                        Receive intelligent suggestions for reordering based on consumption patterns and
+                                        inventory levels.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 rounded-xl border border-[var(--accent-color)] bg-white p-6 shadow-sm hover:shadow-lg transition-shadow duration-300 sm:col-span-2 lg:col-span-1 lg:col-start-2">
+                                <div class="icon-container">
+                                    <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M88,48V16a8,8,0,0,1,16,0V48a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,128,56Zm32,0a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,160,56Zm92.8,46.4L224,124v60a32,32,0,0,1-32,32H64a32,32,0,0,1-32-32V124L3.2,102.4a8,8,0,0,1,9.6-12.8L32,104V88A16,16,0,0,1,48,72H208a16,16,0,0,1,16,16v16l19.2-14.4a8,8,0,0,1,9.6,12.8ZM208,88H48v96a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="text-[var(--text-primary)] text-lg font-semibold leading-tight">Custom
+                                        Recipe Builder</h3>
+                                    <p class="text-[var(--text-secondary)] text-sm font-normal leading-relaxed">Create
+                                        and customize recipes with precise ingredient costs and nutritional information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-[var(--accent-color)] text-[var(--text-secondary)]">
+                <div class="max-w-5xl mx-auto px-6 sm:px-10 py-10 sm:py-12 @container">
+                    <div
+                        class="flex flex-col sm:flex-row flex-wrap items-center justify-center sm:justify-between gap-6 text-center">
+                        <a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors"
+                            href="#">Privacy Policy</a>
+                        <a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors"
+                            href="#">Terms of Service</a>
+                        <a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors"
+                            href="#">Contact Us</a>
+                    </div>
+                    <p class="text-sm font-normal leading-normal text-center mt-8">© 2023 CulinaryEdge. All rights
+                        reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
